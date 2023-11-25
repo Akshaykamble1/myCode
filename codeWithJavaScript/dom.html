@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg{
+            background-color: aquamarine;
+        }
+        .text-success{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the world of programming</h1>
+    <div id="firstContainer" class="container">
+        <button id="click">Click_Me</button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quas.</p>
+    </div>
+    <div class="container">
+        <p>This is my paragraph</p>
+    </div>
+    <script>
+        let elem=document.getElementById('click');
+        // console.log(elem);
+        // console.log(elem.innerHTML);
+        // console.log(elem.innerText);
+
+        let elemClass=document.getElementsByClassName('container');
+        // console.log(elemClass);
+        // console.log(elemClass[0].innerHTML);
+        // console.log(elemClass[0].innerText);
+
+        // elemClass[0].style.background="red";
+        // elemClass[0].classList.add('bg');
+        // elemClass[0].classList.add('text-success');
+        
+        let tags = document.getElementsByTagName('div');
+        // console.log(tags);
+        // createdElement=document.createElement('button');
+        // createdElement.innerText = "This is a created para";
+        // tags[0].appendChild(createdElement);
+        // createdElement2=document.createElement('h1');
+        // createdElement2.innerText = "This is a created heading";
+        // tags[0].replaceChild(createdElement2,createdElement);
+        // tags[0].removeChild(createdElement2);
+        
+        let qs=document.querySelector('.container');
+        console.log(qs);
+        let qsl=document.querySelectorAll('.container');
+        console.log(qsl);
+    </script>
+</body>
+
+</html

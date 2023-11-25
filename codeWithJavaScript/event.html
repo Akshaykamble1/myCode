@@ -1,0 +1,75 @@
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in JavaScript</title>
+</head>
+
+<body>
+    <div id="events">
+        <h1>Event</h1>
+        <p id="one">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet eligendi, facere fugit sit
+            praesentium aliquid
+            necessitatibus doloremque quaerat facilis cupiditate nihil vitae possimus ad tenetur aspernatur ratione
+            voluptas optio illo adipisci expedita! Magni tempora eaque adipisci aspernatur ratione minus sunt blanditiis
+            quod culpa neque, rerum consectetur maiores magnam fugit sit eum. Illum, commodi rem veniam porro facere
+            laborum vitae quam tenetur sit possimus officiis et deleniti. Delectus voluptates, suscipit possimus ex quas
+            totam ducimus doloremque beatae deserunt provident distinctio itaque reiciendis esse cupiditate deleniti hic
+            tenetur modi quaerat ut tempore repudiandae fugit cumque dolor quos! Voluptas corrupti soluta officiis,
+            harum quos iure rerum minima nihil laudantium id odit pariatur ullam, sunt tenetur quam unde rem reiciendis
+            necessitatibus autem aperiam a?
+        </p>
+        <input type="button" onclick="handleButtonClick()" value="Click_Me">
+    </div>
+    <h1>Welcome to the world of programming</h1>
+    <div id="firstContainer" class="container">
+        <button id="click">Click_Me</button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quas.</p>
+    </div>
+    <div class="container">
+        <p>This is my paragraph</p>
+    </div>
+
+</body>
+<script>
+    console.log("Event in JavaScript");
+
+    // function handleButtonClick() {
+    //     alert("Function is called...");
+    // }
+
+    // window.onload = function()
+    // {
+    //     console.log("Document is loaded");
+    // }
+
+    // firstContainer.addEventListener('click',function(){
+    //     document.querySelectorAll('.container')[1].innerHTML="<b>I am bold</b>";
+    //     console.log("first container is clicked");
+    // });
+
+    // firstContainer.addEventListener('mouseover',function(){
+    //     console.log("mouse over event is fired.");
+    // });
+
+    // firstContainer.addEventListener('mouseout',function(){
+    //     console.log("mouse out event is fired.");
+    // });
+
+    let prevHTML = document.querySelectorAll('.container')[1].innerHTML;
+    firstContainer.addEventListener('mouseup',function(){
+        document.querySelectorAll('.container')[1].innerHTML = prevHTML;
+        console.log("mouse up event is fired.");
+    });
+
+    firstContainer.addEventListener('mousedown',function(){
+        document.querySelectorAll('.container')[1].innerHTML="<b>I am bold</b>";
+        console.log("mouse down event is fired.");
+    });
+
+</script>
+
+</html>

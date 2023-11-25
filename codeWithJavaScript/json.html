@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to the world of programming</h1>
+    <div id="firstContainer" class="container">
+        <button id="click">Click_Me</button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quas.</p>
+    </div>
+    <div class="container">
+        <p>This is my paragraph</p>
+    </div>
+
+    <script>
+        let obj = {name:"Akshay",Id:23,sayHi:function(){this.name}};
+        // let stringJSON=JSON.stringify(obj);
+        // console.log(stringJSON);
+        // console.log(typeof stringJSON);
+        // // console.log(typeof obj);
+        // // console.log(obj.Id);
+        // objectJSON=JSON.parse(stringJSON);
+        // console.log(objectJSON);
+        // console.log(typeof objectJSON);
+        // console.log(obj.name);
+        obj.destination="Software";
+        // console.log(obj);
+        // console.log(obj.sayHi);
+
+        // to print the keys in object
+        // for(let key in obj)
+        // {
+        //     console.log(key);
+        // }
+
+        // // tp print values of keys present in object
+        // for(let key in obj)
+        // {
+        //     console.log(obj[key]);
+        // }
+
+        console.log(Object.keys(obj));
+        console.log(Object.values(obj));
+        console.log(Object.entries(obj));
+    </script>
+</body>
+</html>
